@@ -39,3 +39,39 @@ Caching is typically used in the following scenarios:
 
 6. **Edge Caching**: Edge caching, also known as "edge computing," involves caching content and data on servers or devices located closer to the end-users, reducing the distance and latency between the user and the data.
 
+# Caching Systems
+
+## What is a Caching System?
+A caching system is a mechanism that stores data or information in a cache, which is a temporary storage location that is faster and more accessible than the original data source. The primary purpose of a caching system is to improve the performance and responsiveness of an application by reducing the time and resources required to retrieve data.
+
+## FIFO (First-In, First-Out)
+FIFO is a cache eviction policy where the oldest, or the first-entered, item in the cache is removed when the cache reaches its capacity. This means that the items are evicted in the same order they were added to the cache.
+
+## LIFO (Last-In, First-Out)
+LIFO is a cache eviction policy where the newest, or the last-entered, item in the cache is removed when the cache reaches its capacity. This means that the items are evicted in the reverse order they were added to the cache.
+
+## LRU (Least Recently Used)
+LRU is a cache eviction policy where the least recently used item in the cache is removed when the cache reaches its capacity. This means that the item that has not been accessed for the longest time is evicted.
+
+## MRU (Most Recently Used)
+MRU is a cache eviction policy where the most recently used item in the cache is removed when the cache reaches its capacity. This means that the item that has been accessed most recently is evicted.
+
+## LFU (Least Frequently Used)
+LFU is a cache eviction policy where the item that has been accessed the least number of times is removed when the cache reaches its capacity. This means that the item with the lowest frequency of access is evicted.
+
+## Purpose of a Caching System
+The primary purpose of a caching system is to improve the performance and responsiveness of an application by reducing the time and resources required to retrieve data. This is achieved by storing frequently accessed data in a cache, which can be accessed much faster than the original data source.
+
+## Limits of a Caching System
+Some of the limits of a caching system include:
+
+1. **Cache Size**: The cache has a limited size, and once it reaches its capacity, a cache eviction policy must be used to remove items to make room for new ones.
+
+2. **Cache Coherency**: If the data in the original source changes, the cached data may become stale and inconsistent with the original data source.
+
+3. **Cache Invalidation**: Determining when to invalidate or update the cached data can be challenging, especially in distributed systems.
+
+4. **Cache Complexity**: Implementing and managing a caching system can add complexity to the overall system architecture, which may require careful design and maintenance.
+
+5. **Cache Overhead**: The overhead of maintaining the cache, such as the memory usage, CPU cycles, and network bandwidth, can sometimes outweigh the benefits of caching, especially for small or infrequently accessed data.
+
